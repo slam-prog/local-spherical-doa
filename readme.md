@@ -1,7 +1,7 @@
 # Local Spherical DOA
-A reproducible simulation framework for local 3D acoustic
-direction-of-arrival estimation using an eight-microphone
-spherical array.
+A reproducible simulation framework for local 3D acoustic <
+direction-of-arrival estimation using an eight-microphone <
+spherical array. <
 (https://img.shields.io/badge/status-simulation--complete-blue)[Status]:
 (https://img.shields.io/badge/python-3.10%2B-blue)[Python]:
 (https://img.shields.io/badge/license-HUMANITARIAN & ETHICAL USE LICENSE (HEUL)
@@ -16,18 +16,21 @@ The system estimates:
 - Elevation
 - Angular error
 
-inside a bounded 45-degree local field of view.
+inside a bounded local field of view with a 45-degree azimuth
+span and a 45-degree elevation span.
 
 ## Project status
+Current status: simulation baseline complete
 
-Current status: simulation baseline complete.
+The simulation and benchmarking pipeline is implemented and
+reproducible> Hardware acquisition , microphone calibration,
+and PCB development are future work and are not included in
+this release.
 
-The simulation pipeline is complete and reproducible.
-Hardware acquisition, microphone calibration, and PCB
-implementation are planned future stages.
+This repository estimates acoustic direction of arrival only.
+It does not estimate distance and does not claim tongue,
+articulatory, anatomical, or intraoral localization.
 
-This repository does not claim anatomical localization,
-tongue localization, or physical localization inside the mouth.
 
 ## Method
 
@@ -55,9 +58,24 @@ Coarse grid step: 4 degrees
 Fine grid step: 0.5 degrees
 SNR: 30 dB
 ```
+##Coordinate convention
 
+Azimuth is measured in the XY plane from the positive X axis
+toward the positive Y axis.
+
+Elevation is measured from the XY plane toward the positive Z axis.
+
+The estimated direction is represented as a unit vector before
+the angular error is computed>
 ## Results
 
+All results below are from independent 1000-trial simulations
+using the same nominal configuration and seed value.
+
+The current benchmark does not yet perform a paired SNR comparison
+using identical source directions and clean signals. Therefore,
+the 20 dB and 30 dB results should not be interpreted as evidence
+that lower SNR improves accuracy.
 ### 30 dB SNR
 
 ```text
@@ -88,7 +106,10 @@ Within 0.5 degrees: 90.0%
 Within 1 degree: 99.9%
 ```
 
-### 10 dB SNR
+### SNR - stress test 10 dB
+At 10 dB SNR, the current estimator enters an unreliable
+operating region. This result is reported as a limitation,
+not as a successful accuracy target.
 
 ```text
 Trials: 1000
