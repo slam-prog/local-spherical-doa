@@ -7,6 +7,12 @@ date-released: "2026-08-17"
 authors:
   - family-names: "AL-AMIR & AL-MOTAWAKIL"
     given-names: "NAJIB & WALID"
+## AI-assisted contributions
+
+AI tools may be used for brainstorming, documentation, and
+development support. Contributors remain responsible for checking
+code correctness, security, and scientific validity.
+
     orcid: "https://orcid.org/0000-0000-0000-0000"
 repository-code: "https://github.com/slam-prog/local-spherical-doa"
 abstract: >
