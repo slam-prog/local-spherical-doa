@@ -260,6 +260,10 @@ Planned hardware stages:
 7. Real speech recordings.
 
 The hardware is not included in the current validation claim.
+## Acknowledgements
+
+AI assistance: Perplexity AI was used for project planneng
+technical discussion, result interpretation, and documentation
 
 ## License
 
