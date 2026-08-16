@@ -1,0 +1,59 @@
+[build-system]
+requires = [
+    "setuptools>=68",
+    "wheel",
+]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-spherical-doa"
+version = "0.1.0"
+description = "Simulation and benchmarking of local 3D acoustic DOA estimation using an eight-microphone spherical array."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Project Author" }
+]
+keywords = [
+    "acoustics",
+    "microphone-array",
+    "DOA",
+    "GCC-PHAT",
+    "TDOA",
+    "sound-localization",
+    "signal-processing",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering",
+]
+
+dependencies = [
+    "numpy>=1.26,<3",
+    "scipy>=1.11,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8,<9",
+    "ruff>=0.6",
+]
+
+[project.urls]
+Repository = "https://github.com/slam-prog/local-spherical-doa"
+Issues = "https://github.com/slam-prog/local-spherical-doa/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+line-length = 79
+target-version = "py310"

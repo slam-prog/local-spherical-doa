@@ -1,0 +1,265 @@
+{
+  "project": "45-degree local spherical DOA",
+  "trials": 1000,
+  "successful_trials": 1000,
+  "failures": 0,
+  "seed": 20260816,
+  "sample_rate_hz": 192000,
+  "duration_seconds": 0.1,
+  "microphone_count": 8,
+  "radius_m": 0.025,
+  "snr_db": 30.0,
+  "field_of_view": {
+    "azimuth_center_deg": 125.0,
+    "azimuth_span_deg": 45.0,
+    "elevation_center_deg": 25.0,
+    "elevation_span_deg": 45.0
+  },
+  "estimator": {
+    "method": "GCC-PHAT",
+    "subsample_interpolation": true,
+    "coarse_step_deg": 4.0,
+    "fine_step_deg": 0.5,
+    "continuous_refinement": true
+  },
+  "angular_error": {
+    "count": 1000,
+    "mean_error_deg": 0.3861365764782456,
+    "median_error_deg": 0.37097516193555957,
+    "p90_error_deg": 0.6738331834037241,
+    "p95_error_deg": 0.7708823126047549,
+    "max_error_deg": 1.1210677347740656,
+    "within_0_5deg": 0.74,
+    "within_1deg": 0.997,
+    "within_3deg": 1.0,
+    "within_5deg": 1.0
+  },
+  "azimuth_absolute_error": {
+    "count": 1000,
+    "mean_error_deg": 0.2104381558874626,
+    "median_error_deg": 0.17875123170040297,
+    "p90_error_deg": 0.43673389521254374,
+    "p95_error_deg": 0.5252363763969398,
+    "max_error_deg": 1.0294118933721847,
+    "within_0_5deg": 0.942,
+    "within_1deg": 0.999,
+    "within_3deg": 1.0,
+    "within_5deg": 1.0
+  },
+  "elevation_absolute_error": {
+    "count": 1000,
+    "mean_error_deg": 0.3034901504040563,
+    "median_error_deg": 0.25482588149378493,
+    "p90_error_deg": 0.6043215311413921,
+    "p95_error_deg": 0.7196382244698324,
+    "max_error_deg": 1.0793576249332375,
+    "within_0_5deg": 0.812,
+    "within_1deg": 0.998,
+    "within_3deg": 1.0,
+    "within_5deg": 1.0
+  },
+  "worst_cases": [
+    {
+      "trial": 321,
+      "true_azimuth_deg": 118.1235118802955,
+      "true_elevation_deg": 44.87872173785793,
+      "estimated_azimuth_deg": 117.69188306535435,
+      "estimated_elevation_deg": 45.95807936279117,
+      "angular_error_deg": 1.1210677347740656,
+      "azimuth_error_deg": 0.43162881494114913,
+      "elevation_error_deg": 1.0793576249332375
+    },
+    {
+      "trial": 361,
+      "true_azimuth_deg": 133.56937910074868,
+      "true_elevation_deg": 23.768867570962392,
+      "estimated_azimuth_deg": 133.87552513486537,
+      "estimated_elevation_deg": 22.756331190357415,
+      "angular_error_deg": 1.050872304990677,
+      "azimuth_error_deg": 0.3061460341166935,
+      "elevation_error_deg": 1.0125363806049776
+    },
+    {
+      "trial": 311,
+      "true_azimuth_deg": 107.87197201751945,
+      "true_elevation_deg": 46.18847463232489,
+      "estimated_azimuth_deg": 107.14264290802473,
+      "estimated_elevation_deg": 47.08300741587637,
+      "angular_error_deg": 1.0251574398001682,
+      "azimuth_error_deg": 0.7293291094947278,
+      "elevation_error_deg": 0.894532783551476
+    },
+    {
+      "trial": 817,
+      "true_azimuth_deg": 129.42813867114174,
+      "true_elevation_deg": 34.74697536455047,
+      "estimated_azimuth_deg": 129.23104024701985,
+      "estimated_elevation_deg": 35.73343872844335,
+      "angular_error_deg": 0.9995110587024387,
+      "azimuth_error_deg": 0.19709842412189005,
+      "elevation_error_deg": 0.9864633638928808
+    },
+    {
+      "trial": 444,
+      "true_azimuth_deg": 115.96448742911923,
+      "true_elevation_deg": 32.48417568619413,
+      "estimated_azimuth_deg": 116.4509048425916,
+      "estimated_elevation_deg": 31.585493080330416,
+      "angular_error_deg": 0.988763832614076,
+      "azimuth_error_deg": 0.4864174134723669,
+      "elevation_error_deg": 0.8986826058637121
+    },
+    {
+      "trial": 798,
+      "true_azimuth_deg": 141.07683537080146,
+      "true_elevation_deg": 12.427130257106887,
+      "estimated_azimuth_deg": 141.0328965657986,
+      "estimated_elevation_deg": 13.385810955037144,
+      "angular_error_deg": 0.9596368816504516,
+      "azimuth_error_deg": 0.04393880500285263,
+      "elevation_error_deg": 0.9586806979302569
+    },
+    {
+      "trial": 709,
+      "true_azimuth_deg": 145.06068494255692,
+      "true_elevation_deg": 19.7378692894828,
+      "estimated_azimuth_deg": 144.91002550498328,
+      "estimated_elevation_deg": 20.684806781153075,
+      "angular_error_deg": 0.9574335515904132,
+      "azimuth_error_deg": 0.15065943757363698,
+      "elevation_error_deg": 0.9469374916702762
+    },
+    {
+      "trial": 507,
+      "true_azimuth_deg": 109.7542489856964,
+      "true_elevation_deg": 14.606413835774251,
+      "estimated_azimuth_deg": 109.43170809258524,
+      "estimated_elevation_deg": 15.50777535203526,
+      "angular_error_deg": 0.9536571625324204,
+      "azimuth_error_deg": 0.3225408931111815,
+      "elevation_error_deg": 0.9013615162610087
+    },
+    {
+      "trial": 199,
+      "true_azimuth_deg": 112.63769322184667,
+      "true_elevation_deg": 44.63383359632942,
+      "estimated_azimuth_deg": 113.03244751479045,
+      "estimated_elevation_deg": 43.73281867217634,
+      "angular_error_deg": 0.9444351518016889,
+      "azimuth_error_deg": 0.3947542929437873,
+      "elevation_error_deg": 0.901014924153074
+    },
+    {
+      "trial": 285,
+      "true_azimuth_deg": 116.75781798499426,
+      "true_elevation_deg": 28.121477974823538,
+      "estimated_azimuth_deg": 117.12530150966329,
+      "estimated_elevation_deg": 27.249594582817604,
+      "angular_error_deg": 0.9306282635802874,
+      "azimuth_error_deg": 0.36748352466901224,
+      "elevation_error_deg": 0.8718833920059339
+    },
+    {
+      "trial": 537,
+      "true_azimuth_deg": 143.21285243837116,
+      "true_elevation_deg": 31.336138546456,
+      "estimated_azimuth_deg": 143.166313921969,
+      "estimated_elevation_deg": 30.432796323116364,
+      "angular_error_deg": 0.9042246868668439,
+      "azimuth_error_deg": 0.04653851640216544,
+      "elevation_error_deg": 0.9033422233396351
+    },
+    {
+      "trial": 360,
+      "true_azimuth_deg": 125.79542833715493,
+      "true_elevation_deg": 13.410267820720232,
+      "estimated_azimuth_deg": 125.65873831377544,
+      "estimated_elevation_deg": 12.525246024766869,
+      "angular_error_deg": 0.8949896509319679,
+      "azimuth_error_deg": 0.13669002337948655,
+      "elevation_error_deg": 0.8850217959533637
+    },
+    {
+      "trial": 569,
+      "true_azimuth_deg": 112.2097263155363,
+      "true_elevation_deg": 44.441080976732394,
+      "estimated_azimuth_deg": 112.67396119092729,
+      "estimated_elevation_deg": 43.616322248307696,
+      "angular_error_deg": 0.889735433775982,
+      "azimuth_error_deg": 0.46423487539098574,
+      "elevation_error_deg": 0.8247587284246976
+    },
+    {
+      "trial": 661,
+      "true_azimuth_deg": 124.33892342530494,
+      "true_elevation_deg": 43.14616226534597,
+      "estimated_azimuth_deg": 123.7571581542613,
+      "estimated_elevation_deg": 43.912399469685795,
+      "angular_error_deg": 0.8746531706184054,
+      "azimuth_error_deg": 0.5817652710436505,
+      "elevation_error_deg": 0.7662372043398236
+    },
+    {
+      "trial": 901,
+      "true_azimuth_deg": 110.2232992066569,
+      "true_elevation_deg": 3.383267384618056,
+      "estimated_azimuth_deg": 110.18803705014409,
+      "estimated_elevation_deg": 2.510232486103269,
+      "angular_error_deg": 0.8737448463868259,
+      "azimuth_error_deg": 0.035262156512828824,
+      "elevation_error_deg": 0.8730348985147871
+    },
+    {
+      "trial": 645,
+      "true_azimuth_deg": 133.23391427601962,
+      "true_elevation_deg": 19.179487085843295,
+      "estimated_azimuth_deg": 133.50092756737112,
+      "estimated_elevation_deg": 18.346812796659158,
+      "angular_error_deg": 0.8702094815686343,
+      "azimuth_error_deg": 0.2670132913515033,
+      "elevation_error_deg": 0.832674289184137
+    },
+    {
+      "trial": 496,
+      "true_azimuth_deg": 104.30155088966694,
+      "true_elevation_deg": 37.688654832383584,
+      "estimated_azimuth_deg": 104.89521413295962,
+      "estimated_elevation_deg": 36.96183143710799,
+      "angular_error_deg": 0.8666760675246119,
+      "azimuth_error_deg": 0.5936632432926672,
+      "elevation_error_deg": 0.7268233952755949
+    },
+    {
+      "trial": 194,
+      "true_azimuth_deg": 103.68502310525189,
+      "true_elevation_deg": 37.927805635256085,
+      "estimated_azimuth_deg": 104.29564550514016,
+      "estimated_elevation_deg": 37.21066576249182,
+      "angular_error_deg": 0.8651742055700836,
+      "azimuth_error_deg": 0.610622399888257,
+      "elevation_error_deg": 0.7171398727642639
+    },
+    {
+      "trial": 943,
+      "true_azimuth_deg": 104.73056395164441,
+      "true_elevation_deg": 42.86254498402058,
+      "estimated_azimuth_deg": 103.70115205827221,
+      "estimated_elevation_deg": 43.28502826539348,
+      "angular_error_deg": 0.8625072628490673,
+      "azimuth_error_deg": 1.0294118933721847,
+      "elevation_error_deg": 0.42248328137289803
+    },
+    {
+      "trial": 870,
+      "true_azimuth_deg": 126.0263309454296,
+      "true_elevation_deg": 15.191155457008893,
+      "estimated_azimuth_deg": 126.0517543266798,
+      "estimated_elevation_deg": 16.05127827093918,
+      "angular_error_deg": 0.860471229030977,
+      "azimuth_error_deg": 0.02542338125019228,
+      "elevation_error_deg": 0.8601228139302854
+    }
+  ],
+  "failed_trials": [],
+  "warning": "Simulation results only; not hardware measurements or anatomical localization."
+}

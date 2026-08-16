@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using this file."
+type: software
+title: "Local Spherical DOA"
+version: "0.1.0"
+date-released: "2026-08-17"
+authors:
+  - family-names: "YOUR FAMILY NAME"
+    given-names: "YOUR GIVEN NAME"
+    orcid: "https://orcid.org/0000-0000-0000-0000"
+repository-code: "https://github.com/slam-prog/local-spherical-doa"
+abstract: >
+  Simulation and benchmarking of local three-dimensional
+  acoustic direction-of-arrival estimation using an
+  eight-microphone spherical array, GCC-PHAT, sub-sample
+  interpolation, coarse-to-fine angular search, and continuous
+  refinement.
+keywords:
+  - acoustics
+  - microphone array
+  - direction of arrival
+  - GCC-PHAT
+  - TDOA
+  - sound localization
+license: MIT
