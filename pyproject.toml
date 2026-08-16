@@ -13,7 +13,7 @@ readme = "README.md"
 requires-python = ">=3.10"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Project Author" }
+    { name = "NAJIB MOHAMMED AL-AMIR AND WALID HASSAN MOHAMMAD AL-MOTAWAKIL" }
 ]
 keywords = [
     "acoustics",
