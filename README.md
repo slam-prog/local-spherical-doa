@@ -2,9 +2,6 @@
 A reproducible simulation framework for local 3D acoustic <
 direction-of-arrival estimation using an eight-microphone <
 spherical array. <
-(https://img.shields.io/badge/status-simulation--complete-blue)[Status]:
-(https://img.shields.io/badge/python-3.10%2B-blue)[Python]:
-(https://img.shields.io/badge/license-HUMANITARIAN & ETHICAL USE LICENSE (HEUL)
 
 Simulation and benchmarking of a local 3D acoustic
 direction-of-arrival estimator using an eight-microphone
